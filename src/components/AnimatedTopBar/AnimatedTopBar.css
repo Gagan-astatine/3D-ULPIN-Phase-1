@@ -1,0 +1,109 @@
+.animated-top-bar {
+  display: inline-flex;
+  position: relative;
+  background-color: #1a1a1a;
+  border-radius: 9999px;
+  height: 60px;
+  align-items: center;
+  padding: 0 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  pointer-events: auto;
+}
+
+.atb-items-container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  align-items: center;
+  z-index: 2;
+}
+
+.atb-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+  color: #a0a0a0;
+  transition: color 0.3s ease;
+  font-size: 12px;
+  font-weight: 500;
+  gap: 4px;
+}
+
+.atb-item.active {
+  color: #ffffff;
+}
+
+.atb-item-icon {
+  position: relative;
+  z-index: 20;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.atb-item.active .atb-item-icon {
+  transform: translateY(-22px);
+  color: #000000; /* Black icon inside white circle */
+}
+
+.atb-item-text {
+  position: absolute;
+  bottom: 8px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.atb-item.active .atb-item-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* The sliding indicator */
+.atb-indicator {
+  position: absolute;
+  top: -20px;
+  width: 56px;
+  height: 56px;
+  background-color: #ffffff; /* White circle */
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Create the inverse curves (the "gooey" bulge effect) using pseudo elements on the indicator wrapper */
+.atb-indicator-wrapper {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  z-index: 1;
+}
+
+.atb-indicator-wrapper::before,
+.atb-indicator-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 26px; /* Align with the center/bottom of the circle */
+  width: 20px;
+  height: 20px;
+  background: transparent;
+}
+
+.atb-indicator-wrapper::before {
+  left: 2px;
+  border-top-right-radius: 20px;
+  box-shadow: 6px -6px 0 0 #1a1a1a;
+}
+
+.atb-indicator-wrapper::after {
+  right: 2px;
+  border-top-left-radius: 20px;
+  box-shadow: -6px -6px 0 0 #1a1a1a;
+}

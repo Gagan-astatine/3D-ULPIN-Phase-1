@@ -1,0 +1,235 @@
+{
+  "record": {
+    "schema": "ulpin-demo-certificate/v1",
+    "certificateId": "CERT-DEMO-0005-V2",
+    "issuedOn": "2026-09-09",
+    "revision": "2026.09-demo.2",
+    "issuer": "3D ULPIN demonstration registry",
+    "notice": "DEMO DATA — Not an official government land record or ownership certificate.",
+    "property": {
+      "ulpin": "ULPIN-DEMO-0005",
+      "parcelId": "PARCEL-005",
+      "buildingId": "BUILDING-005",
+      "name": "Nandi Mansion",
+      "address": "25, Demo Civic Road, Bengaluru, Karnataka",
+      "propertyType": "Residential",
+      "category": "Mansion",
+      "architecturalStyle": "mansion",
+      "tenure": "Private · fictional",
+      "recordVersion": "2026.09-demo.2",
+      "landArea": 1800,
+      "builtUpArea": 1404,
+      "buildingHeight": 6,
+      "numberOfFloors": 2,
+      "crs": "EPSG:4326",
+      "status": "Validated",
+      "isDemo": true
+    },
+    "parcel": {
+      "parcelId": "PARCEL-005",
+      "coordinates": [
+        [
+          77.59367817109144,
+          12.972609149263176
+        ],
+        [
+          77.59404690265487,
+          12.972609149263176
+        ],
+        [
+          77.59404690265487,
+          12.973015984088239
+        ],
+        [
+          77.59367817109144,
+          12.973015984088239
+        ]
+      ],
+      "area": 1800,
+      "buildingId": "BUILDING-005",
+      "crs": "EPSG:4326"
+    },
+    "building": {
+      "name": "Nandi Mansion",
+      "buildingId": "BUILDING-005",
+      "parcelId": "PARCEL-005",
+      "ulpin": "ULPIN-DEMO-0005",
+      "footprint": [
+        [
+          77.59374269911504,
+          12.97269051622819
+        ],
+        [
+          77.59398237463127,
+          12.97269051622819
+        ],
+        [
+          77.59398237463127,
+          12.972934617123226
+        ],
+        [
+          77.59374269911504,
+          12.972934617123226
+        ]
+      ],
+      "localFootprint": [
+        [
+          -13,
+          -13.5
+        ],
+        [
+          13,
+          -13.5
+        ],
+        [
+          13,
+          13.5
+        ],
+        [
+          -13,
+          13.5
+        ]
+      ],
+      "footprintArea": 702,
+      "center": [
+        77.59386253687316,
+        12.972812566675707
+      ],
+      "height": 6,
+      "numberOfFloors": 2,
+      "floorHeight": 3,
+      "propertyType": "Residential",
+      "category": "Mansion",
+      "architecturalStyle": "mansion",
+      "width": 26,
+      "depth": 27,
+      "roofHeight": 5,
+      "models": {
+        "building": "models/BUILDING-005/building.glb",
+        "floor": "models/BUILDING-005/floor.glb",
+        "roof": "models/BUILDING-005/roof.glb",
+        "site": "models/BUILDING-005/site.glb"
+      }
+    },
+    "floors": [
+      {
+        "unitId": "UNIT-005-F01",
+        "buildingId": "BUILDING-005",
+        "parcelId": "PARCEL-005",
+        "ulpin": "ULPIN-DEMO-0005",
+        "floorNumber": 1,
+        "unitType": "Residential",
+        "area": 702,
+        "displayColor": null,
+        "units": [
+          {
+            "unitId": "SPACE-005-F01-A",
+            "buildingId": "BUILDING-005",
+            "parcelId": "PARCEL-005",
+            "ulpin": "ULPIN-DEMO-0005",
+            "floorNumber": 1,
+            "unitType": "Residential",
+            "area": 702,
+            "displayColor": null,
+            "parentFloorId": "UNIT-005-F01",
+            "name": "Apartment 01A",
+            "footprint": [
+              [
+                77.59374269911504,
+                12.97269051622819
+              ],
+              [
+                77.59398237463127,
+                12.97269051622819
+              ],
+              [
+                77.59398237463127,
+                12.972934617123226
+              ],
+              [
+                77.59374269911504,
+                12.972934617123226
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-005-F02",
+        "buildingId": "BUILDING-005",
+        "parcelId": "PARCEL-005",
+        "ulpin": "ULPIN-DEMO-0005",
+        "floorNumber": 2,
+        "unitType": "Residential",
+        "area": 702,
+        "displayColor": null,
+        "units": [
+          {
+            "unitId": "SPACE-005-F02-A",
+            "buildingId": "BUILDING-005",
+            "parcelId": "PARCEL-005",
+            "ulpin": "ULPIN-DEMO-0005",
+            "floorNumber": 2,
+            "unitType": "Residential",
+            "area": 702,
+            "displayColor": null,
+            "parentFloorId": "UNIT-005-F02",
+            "name": "Apartment 02A",
+            "footprint": [
+              [
+                77.59374269911504,
+                12.97269051622819
+              ],
+              [
+                77.59398237463127,
+                12.97269051622819
+              ],
+              [
+                77.59398237463127,
+                12.972934617123226
+              ],
+              [
+                77.59374269911504,
+                12.972934617123226
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "digest": "b8f698f5ad1febdba2f48dc2942c6698ac5577d5df9810bdaca52758d8443619",
+  "checks": [
+    {
+      "key": "relationships",
+      "label": "Parcel and building relationships",
+      "passed": true
+    },
+    {
+      "key": "coordinates",
+      "label": "Geographic coordinate metadata",
+      "passed": true
+    },
+    {
+      "key": "vertical",
+      "label": "Complete floor sequence and heights",
+      "passed": true
+    },
+    {
+      "key": "areas",
+      "label": "Floor and property areas",
+      "passed": true
+    },
+    {
+      "key": "units",
+      "label": "Property unit partitions",
+      "passed": true
+    },
+    {
+      "key": "demo",
+      "label": "Explicit fictional record designation",
+      "passed": true
+    }
+  ],
+  "valid": true
+}

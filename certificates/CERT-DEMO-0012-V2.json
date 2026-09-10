@@ -1,0 +1,193 @@
+{
+  "record": {
+    "schema": "ulpin-demo-certificate/v1",
+    "certificateId": "CERT-DEMO-0012-V2",
+    "issuedOn": "2026-09-09",
+    "revision": "2026.09-demo.2",
+    "issuer": "3D ULPIN demonstration registry",
+    "notice": "DEMO DATA — Not an official government land record or ownership certificate.",
+    "property": {
+      "ulpin": "ULPIN-DEMO-0012",
+      "parcelId": "PARCEL-012",
+      "buildingId": "BUILDING-012",
+      "name": "Community Green Pavilion",
+      "address": "32, Demo Civic Road, Bengaluru, Karnataka",
+      "propertyType": "Institutional",
+      "category": "Public park & pavilion",
+      "architecturalStyle": "park",
+      "tenure": "Public / community · fictional",
+      "recordVersion": "2026.09-demo.2",
+      "landArea": 1800,
+      "builtUpArea": 224,
+      "buildingHeight": 3,
+      "numberOfFloors": 1,
+      "crs": "EPSG:4326",
+      "status": "Validated",
+      "isDemo": true
+    },
+    "parcel": {
+      "parcelId": "PARCEL-012",
+      "coordinates": [
+        [
+          77.59589056047197,
+          12.971958213543079
+        ],
+        [
+          77.5962592920354,
+          12.971958213543079
+        ],
+        [
+          77.5962592920354,
+          12.97236504836814
+        ],
+        [
+          77.59589056047197,
+          12.97236504836814
+        ]
+      ],
+      "area": 1800,
+      "buildingId": "BUILDING-012",
+      "crs": "EPSG:4326"
+    },
+    "building": {
+      "name": "Community Green Pavilion",
+      "buildingId": "BUILDING-012",
+      "parcelId": "PARCEL-012",
+      "ulpin": "ULPIN-DEMO-0012",
+      "footprint": [
+        [
+          77.596001179941,
+          12.972098345538377
+        ],
+        [
+          77.59614867256637,
+          12.972098345538377
+        ],
+        [
+          77.59614867256637,
+          12.972224916372841
+        ],
+        [
+          77.596001179941,
+          12.972224916372841
+        ]
+      ],
+      "localFootprint": [
+        [
+          -8,
+          -7
+        ],
+        [
+          8,
+          -7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          -8,
+          7
+        ]
+      ],
+      "footprintArea": 224,
+      "center": [
+        77.59607492625369,
+        12.97216163095561
+      ],
+      "height": 3,
+      "numberOfFloors": 1,
+      "floorHeight": 3,
+      "propertyType": "Institutional",
+      "category": "Public park & pavilion",
+      "architecturalStyle": "park",
+      "width": 16,
+      "depth": 14,
+      "roofHeight": 4,
+      "models": {
+        "building": "models/BUILDING-012/building.glb",
+        "floor": "models/BUILDING-012/floor.glb",
+        "roof": "models/BUILDING-012/roof.glb",
+        "site": "models/BUILDING-012/site.glb"
+      }
+    },
+    "floors": [
+      {
+        "unitId": "UNIT-012-F01",
+        "buildingId": "BUILDING-012",
+        "parcelId": "PARCEL-012",
+        "ulpin": "ULPIN-DEMO-0012",
+        "floorNumber": 1,
+        "unitType": "Institutional",
+        "area": 224,
+        "displayColor": null,
+        "units": [
+          {
+            "unitId": "SPACE-012-F01-A",
+            "buildingId": "BUILDING-012",
+            "parcelId": "PARCEL-012",
+            "ulpin": "ULPIN-DEMO-0012",
+            "floorNumber": 1,
+            "unitType": "Institutional",
+            "area": 224,
+            "displayColor": null,
+            "parentFloorId": "UNIT-012-F01",
+            "name": "Property Unit 01A",
+            "footprint": [
+              [
+                77.596001179941,
+                12.972098345538377
+              ],
+              [
+                77.59614867256637,
+                12.972098345538377
+              ],
+              [
+                77.59614867256637,
+                12.972224916372841
+              ],
+              [
+                77.596001179941,
+                12.972224916372841
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "digest": "22bcf8705c2914d38493b8839459a057bd495341c4bc44ea9cc0c8d0533e404b",
+  "checks": [
+    {
+      "key": "relationships",
+      "label": "Parcel and building relationships",
+      "passed": true
+    },
+    {
+      "key": "coordinates",
+      "label": "Geographic coordinate metadata",
+      "passed": true
+    },
+    {
+      "key": "vertical",
+      "label": "Complete floor sequence and heights",
+      "passed": true
+    },
+    {
+      "key": "areas",
+      "label": "Floor and property areas",
+      "passed": true
+    },
+    {
+      "key": "units",
+      "label": "Property unit partitions",
+      "passed": true
+    },
+    {
+      "key": "demo",
+      "label": "Explicit fictional record designation",
+      "passed": true
+    }
+  ],
+  "valid": true
+}

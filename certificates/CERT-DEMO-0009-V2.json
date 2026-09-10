@@ -1,0 +1,193 @@
+{
+  "record": {
+    "schema": "ulpin-demo-certificate/v1",
+    "certificateId": "CERT-DEMO-0009-V2",
+    "issuedOn": "2026-09-09",
+    "revision": "2026.09-demo.2",
+    "issuer": "3D ULPIN demonstration registry",
+    "notice": "DEMO DATA — Not an official government land record or ownership certificate.",
+    "property": {
+      "ulpin": "ULPIN-DEMO-0009",
+      "parcelId": "PARCEL-009",
+      "buildingId": "BUILDING-009",
+      "name": "Sampige Temple",
+      "address": "29, Demo Civic Road, Bengaluru, Karnataka",
+      "propertyType": "Institutional",
+      "category": "Temple",
+      "architecturalStyle": "temple",
+      "tenure": "Public / community · fictional",
+      "recordVersion": "2026.09-demo.2",
+      "landArea": 1800,
+      "builtUpArea": 576,
+      "buildingHeight": 3,
+      "numberOfFloors": 1,
+      "crs": "EPSG:4326",
+      "status": "Validated",
+      "isDemo": true
+    },
+    "parcel": {
+      "parcelId": "PARCEL-009",
+      "coordinates": [
+        [
+          77.59344771386431,
+          12.970584015911761
+        ],
+        [
+          77.59381644542773,
+          12.970584015911761
+        ],
+        [
+          77.59381644542773,
+          12.970990850736824
+        ],
+        [
+          77.59344771386431,
+          12.970990850736824
+        ]
+      ],
+      "area": 1800,
+      "buildingId": "BUILDING-009",
+      "crs": "EPSG:4326"
+    },
+    "building": {
+      "name": "Sampige Temple",
+      "buildingId": "BUILDING-009",
+      "parcelId": "PARCEL-009",
+      "ulpin": "ULPIN-DEMO-0009",
+      "footprint": [
+        [
+          77.59352146017699,
+          12.97067894403761
+        ],
+        [
+          77.59374269911504,
+          12.97067894403761
+        ],
+        [
+          77.59374269911504,
+          12.970895922610975
+        ],
+        [
+          77.59352146017699,
+          12.970895922610975
+        ]
+      ],
+      "localFootprint": [
+        [
+          -12,
+          -12
+        ],
+        [
+          12,
+          -12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          -12,
+          12
+        ]
+      ],
+      "footprintArea": 576,
+      "center": [
+        77.59363207964601,
+        12.970787433324293
+      ],
+      "height": 3,
+      "numberOfFloors": 1,
+      "floorHeight": 3,
+      "propertyType": "Institutional",
+      "category": "Temple",
+      "architecturalStyle": "temple",
+      "width": 24,
+      "depth": 24,
+      "roofHeight": 12,
+      "models": {
+        "building": "models/BUILDING-009/building.glb",
+        "floor": "models/BUILDING-009/floor.glb",
+        "roof": "models/BUILDING-009/roof.glb",
+        "site": "models/BUILDING-009/site.glb"
+      }
+    },
+    "floors": [
+      {
+        "unitId": "UNIT-009-F01",
+        "buildingId": "BUILDING-009",
+        "parcelId": "PARCEL-009",
+        "ulpin": "ULPIN-DEMO-0009",
+        "floorNumber": 1,
+        "unitType": "Institutional",
+        "area": 576,
+        "displayColor": null,
+        "units": [
+          {
+            "unitId": "SPACE-009-F01-A",
+            "buildingId": "BUILDING-009",
+            "parcelId": "PARCEL-009",
+            "ulpin": "ULPIN-DEMO-0009",
+            "floorNumber": 1,
+            "unitType": "Institutional",
+            "area": 576,
+            "displayColor": null,
+            "parentFloorId": "UNIT-009-F01",
+            "name": "Property Unit 01A",
+            "footprint": [
+              [
+                77.59352146017699,
+                12.97067894403761
+              ],
+              [
+                77.59374269911504,
+                12.97067894403761
+              ],
+              [
+                77.59374269911504,
+                12.970895922610975
+              ],
+              [
+                77.59352146017699,
+                12.970895922610975
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "digest": "97ae8e2258dea556ec00098dad0e88a52031fe8970096698871998798214ab7c",
+  "checks": [
+    {
+      "key": "relationships",
+      "label": "Parcel and building relationships",
+      "passed": true
+    },
+    {
+      "key": "coordinates",
+      "label": "Geographic coordinate metadata",
+      "passed": true
+    },
+    {
+      "key": "vertical",
+      "label": "Complete floor sequence and heights",
+      "passed": true
+    },
+    {
+      "key": "areas",
+      "label": "Floor and property areas",
+      "passed": true
+    },
+    {
+      "key": "units",
+      "label": "Property unit partitions",
+      "passed": true
+    },
+    {
+      "key": "demo",
+      "label": "Explicit fictional record designation",
+      "passed": true
+    }
+  ],
+  "valid": true
+}

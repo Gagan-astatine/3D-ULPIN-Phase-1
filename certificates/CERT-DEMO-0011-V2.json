@@ -1,0 +1,547 @@
+{
+  "record": {
+    "schema": "ulpin-demo-certificate/v1",
+    "certificateId": "CERT-DEMO-0011-V2",
+    "issuedOn": "2026-09-09",
+    "revision": "2026.09-demo.2",
+    "issuer": "3D ULPIN demonstration registry",
+    "notice": "DEMO DATA — Not an official government land record or ownership certificate.",
+    "property": {
+      "ulpin": "ULPIN-DEMO-0011",
+      "parcelId": "PARCEL-011",
+      "buildingId": "BUILDING-011",
+      "name": "Bengaluru Demo Hall",
+      "address": "31, Demo Civic Road, Bengaluru, Karnataka",
+      "propertyType": "Institutional",
+      "category": "Civic hall",
+      "architecturalStyle": "civic",
+      "tenure": "Public / community · fictional",
+      "recordVersion": "2026.09-demo.2",
+      "landArea": 1800,
+      "builtUpArea": 2352,
+      "buildingHeight": 9,
+      "numberOfFloors": 3,
+      "crs": "EPSG:4326",
+      "status": "Validated",
+      "isDemo": true
+    },
+    "parcel": {
+      "parcelId": "PARCEL-011",
+      "coordinates": [
+        [
+          77.59298679941003,
+          12.97200341741253
+        ],
+        [
+          77.59335553097345,
+          12.97200341741253
+        ],
+        [
+          77.59335553097345,
+          12.97241025223759
+        ],
+        [
+          77.59298679941003,
+          12.97241025223759
+        ]
+      ],
+      "area": 1800,
+      "buildingId": "BUILDING-011",
+      "crs": "EPSG:4326"
+    },
+    "building": {
+      "name": "Bengaluru Demo Hall",
+      "buildingId": "BUILDING-011",
+      "parcelId": "PARCEL-011",
+      "ulpin": "ULPIN-DEMO-0011",
+      "footprint": [
+        [
+          77.59304210914455,
+          12.972080263990598
+        ],
+        [
+          77.59330022123893,
+          12.972080263990598
+        ],
+        [
+          77.59330022123893,
+          12.972333405659525
+        ],
+        [
+          77.59304210914455,
+          12.972333405659525
+        ]
+      ],
+      "localFootprint": [
+        [
+          -14,
+          -14
+        ],
+        [
+          14,
+          -14
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          -14,
+          14
+        ]
+      ],
+      "footprintArea": 784,
+      "center": [
+        77.59317116519173,
+        12.97220683482506
+      ],
+      "height": 9,
+      "numberOfFloors": 3,
+      "floorHeight": 3,
+      "propertyType": "Institutional",
+      "category": "Civic hall",
+      "architecturalStyle": "civic",
+      "width": 28,
+      "depth": 28,
+      "roofHeight": 4,
+      "models": {
+        "building": "models/BUILDING-011/building.glb",
+        "floor": "models/BUILDING-011/floor.glb",
+        "roof": "models/BUILDING-011/roof.glb",
+        "site": "models/BUILDING-011/site.glb"
+      }
+    },
+    "floors": [
+      {
+        "unitId": "UNIT-011-F01",
+        "buildingId": "BUILDING-011",
+        "parcelId": "PARCEL-011",
+        "ulpin": "ULPIN-DEMO-0011",
+        "floorNumber": 1,
+        "unitType": "Institutional",
+        "area": 784,
+        "displayColor": null,
+        "units": [
+          {
+            "unitId": "SPACE-011-F01-A",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 1,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F01",
+            "name": "Property Unit 01A",
+            "footprint": [
+              [
+                77.59304210914455,
+                12.972080263990598
+              ],
+              [
+                77.59317116519173,
+                12.972080263990598
+              ],
+              [
+                77.59317116519173,
+                12.97220683482506
+              ],
+              [
+                77.59304210914455,
+                12.97220683482506
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-011-F01-B",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 1,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F01",
+            "name": "Property Unit 01B",
+            "footprint": [
+              [
+                77.59317116519173,
+                12.972080263990598
+              ],
+              [
+                77.59330022123893,
+                12.972080263990598
+              ],
+              [
+                77.59330022123893,
+                12.97220683482506
+              ],
+              [
+                77.59317116519173,
+                12.97220683482506
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-011-F01-C",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 1,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F01",
+            "name": "Property Unit 01C",
+            "footprint": [
+              [
+                77.59317116519173,
+                12.97220683482506
+              ],
+              [
+                77.59317116519173,
+                12.972333405659525
+              ],
+              [
+                77.59304210914455,
+                12.972333405659525
+              ],
+              [
+                77.59304210914455,
+                12.97220683482506
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-011-F01-D",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 1,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F01",
+            "name": "Property Unit 01D",
+            "footprint": [
+              [
+                77.59330022123893,
+                12.97220683482506
+              ],
+              [
+                77.59330022123893,
+                12.972333405659525
+              ],
+              [
+                77.59317116519173,
+                12.972333405659525
+              ],
+              [
+                77.59317116519173,
+                12.97220683482506
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-011-F02",
+        "buildingId": "BUILDING-011",
+        "parcelId": "PARCEL-011",
+        "ulpin": "ULPIN-DEMO-0011",
+        "floorNumber": 2,
+        "unitType": "Institutional",
+        "area": 784,
+        "displayColor": null,
+        "units": [
+          {
+            "unitId": "SPACE-011-F02-A",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 2,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F02",
+            "name": "Property Unit 02A",
+            "footprint": [
+              [
+                77.59304210914455,
+                12.972080263990598
+              ],
+              [
+                77.59317116519173,
+                12.972080263990598
+              ],
+              [
+                77.59317116519173,
+                12.97220683482506
+              ],
+              [
+                77.59304210914455,
+                12.97220683482506
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-011-F02-B",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 2,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F02",
+            "name": "Property Unit 02B",
+            "footprint": [
+              [
+                77.59317116519173,
+                12.972080263990598
+              ],
+              [
+                77.59330022123893,
+                12.972080263990598
+              ],
+              [
+                77.59330022123893,
+                12.97220683482506
+              ],
+              [
+                77.59317116519173,
+                12.97220683482506
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-011-F02-C",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 2,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F02",
+            "name": "Property Unit 02C",
+            "footprint": [
+              [
+                77.59317116519173,
+                12.97220683482506
+              ],
+              [
+                77.59317116519173,
+                12.972333405659525
+              ],
+              [
+                77.59304210914455,
+                12.972333405659525
+              ],
+              [
+                77.59304210914455,
+                12.97220683482506
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-011-F02-D",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 2,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F02",
+            "name": "Property Unit 02D",
+            "footprint": [
+              [
+                77.59330022123893,
+                12.97220683482506
+              ],
+              [
+                77.59330022123893,
+                12.972333405659525
+              ],
+              [
+                77.59317116519173,
+                12.972333405659525
+              ],
+              [
+                77.59317116519173,
+                12.97220683482506
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-011-F03",
+        "buildingId": "BUILDING-011",
+        "parcelId": "PARCEL-011",
+        "ulpin": "ULPIN-DEMO-0011",
+        "floorNumber": 3,
+        "unitType": "Institutional",
+        "area": 784,
+        "displayColor": null,
+        "units": [
+          {
+            "unitId": "SPACE-011-F03-A",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 3,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F03",
+            "name": "Property Unit 03A",
+            "footprint": [
+              [
+                77.59304210914455,
+                12.972080263990598
+              ],
+              [
+                77.59317116519173,
+                12.972080263990598
+              ],
+              [
+                77.59317116519173,
+                12.97220683482506
+              ],
+              [
+                77.59304210914455,
+                12.97220683482506
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-011-F03-B",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 3,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F03",
+            "name": "Property Unit 03B",
+            "footprint": [
+              [
+                77.59317116519173,
+                12.972080263990598
+              ],
+              [
+                77.59330022123893,
+                12.972080263990598
+              ],
+              [
+                77.59330022123893,
+                12.97220683482506
+              ],
+              [
+                77.59317116519173,
+                12.97220683482506
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-011-F03-C",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 3,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F03",
+            "name": "Property Unit 03C",
+            "footprint": [
+              [
+                77.59317116519173,
+                12.97220683482506
+              ],
+              [
+                77.59317116519173,
+                12.972333405659525
+              ],
+              [
+                77.59304210914455,
+                12.972333405659525
+              ],
+              [
+                77.59304210914455,
+                12.97220683482506
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-011-F03-D",
+            "buildingId": "BUILDING-011",
+            "parcelId": "PARCEL-011",
+            "ulpin": "ULPIN-DEMO-0011",
+            "floorNumber": 3,
+            "unitType": "Institutional",
+            "area": 196,
+            "displayColor": null,
+            "parentFloorId": "UNIT-011-F03",
+            "name": "Property Unit 03D",
+            "footprint": [
+              [
+                77.59330022123893,
+                12.97220683482506
+              ],
+              [
+                77.59330022123893,
+                12.972333405659525
+              ],
+              [
+                77.59317116519173,
+                12.972333405659525
+              ],
+              [
+                77.59317116519173,
+                12.97220683482506
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "digest": "fb1a99ea3157a6c8f2b48c69ed8cf28fb586e2f58fcae9dc0f7db2799653a0b3",
+  "checks": [
+    {
+      "key": "relationships",
+      "label": "Parcel and building relationships",
+      "passed": true
+    },
+    {
+      "key": "coordinates",
+      "label": "Geographic coordinate metadata",
+      "passed": true
+    },
+    {
+      "key": "vertical",
+      "label": "Complete floor sequence and heights",
+      "passed": true
+    },
+    {
+      "key": "areas",
+      "label": "Floor and property areas",
+      "passed": true
+    },
+    {
+      "key": "units",
+      "label": "Property unit partitions",
+      "passed": true
+    },
+    {
+      "key": "demo",
+      "label": "Explicit fictional record designation",
+      "passed": true
+    }
+  ],
+  "valid": true
+}

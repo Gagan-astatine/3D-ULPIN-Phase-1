@@ -1,0 +1,1735 @@
+{
+  "record": {
+    "schema": "ulpin-demo-certificate/v1",
+    "certificateId": "CERT-DEMO-0001-V2",
+    "issuedOn": "2026-09-09",
+    "revision": "2026.09-demo.2",
+    "issuer": "3D ULPIN demonstration registry",
+    "notice": "DEMO DATA — Not an official government land record or ownership certificate.",
+    "property": {
+      "ulpin": "ULPIN-DEMO-0001",
+      "parcelId": "PARCEL-001",
+      "buildingId": "BUILDING-001",
+      "name": "Tower A · Aaranya",
+      "address": "21, Demo Sampige Road, Bengaluru, Karnataka",
+      "propertyType": "Mixed-use",
+      "category": "Apartments & retail",
+      "architecturalStyle": "curtain-wall",
+      "tenure": "Private · fictional",
+      "recordVersion": "2026.09-demo.2",
+      "landArea": 4216,
+      "builtUpArea": 11520,
+      "buildingHeight": 36,
+      "numberOfFloors": 12,
+      "crs": "EPSG:4326",
+      "status": "Validated",
+      "isDemo": true
+    },
+    "parcel": {
+      "parcelId": "PARCEL-001",
+      "coordinates": [
+        [
+          77.5942865781711,
+          12.971519736009402
+        ],
+        [
+          77.5949134218289,
+          12.971519736009402
+        ],
+        [
+          77.5949134218289,
+          12.972080263990598
+        ],
+        [
+          77.5942865781711,
+          12.972080263990598
+        ]
+      ],
+      "area": 4216,
+      "buildingId": "BUILDING-001",
+      "crs": "EPSG:4326"
+    },
+    "building": {
+      "name": "Tower A · Aaranya",
+      "buildingId": "BUILDING-001",
+      "parcelId": "PARCEL-001",
+      "ulpin": "ULPIN-DEMO-0001",
+      "footprint": [
+        [
+          77.59446172566372,
+          12.971655347617757
+        ],
+        [
+          77.59473827433628,
+          12.971655347617757
+        ],
+        [
+          77.59473827433628,
+          12.971944652382243
+        ],
+        [
+          77.59446172566372,
+          12.971944652382243
+        ]
+      ],
+      "localFootprint": [
+        [
+          -15,
+          -16
+        ],
+        [
+          15,
+          -16
+        ],
+        [
+          15,
+          16
+        ],
+        [
+          -15,
+          16
+        ]
+      ],
+      "footprintArea": 960,
+      "center": [
+        77.5946,
+        12.9718
+      ],
+      "height": 36,
+      "numberOfFloors": 12,
+      "floorHeight": 3,
+      "propertyType": "Mixed-use",
+      "category": "Apartments & retail",
+      "architecturalStyle": "curtain-wall",
+      "width": 30,
+      "depth": 32,
+      "roofHeight": 7,
+      "models": {
+        "building": "models/BUILDING-001/building.glb",
+        "floor": "models/BUILDING-001/floor.glb",
+        "roof": "models/BUILDING-001/roof.glb",
+        "site": "models/BUILDING-001/site.glb"
+      }
+    },
+    "floors": [
+      {
+        "unitId": "UNIT-001-F01",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 1,
+        "unitType": "Commercial",
+        "area": 960,
+        "displayColor": "#27cbe5",
+        "units": [
+          {
+            "unitId": "SPACE-001-F01-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 1,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#27cbe5",
+            "parentFloorId": "UNIT-001-F01",
+            "name": "Commercial Unit 01A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F01-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 1,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#27cbe5",
+            "parentFloorId": "UNIT-001-F01",
+            "name": "Commercial Unit 01B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F01-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 1,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#27cbe5",
+            "parentFloorId": "UNIT-001-F01",
+            "name": "Commercial Unit 01C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F01-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 1,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#27cbe5",
+            "parentFloorId": "UNIT-001-F01",
+            "name": "Commercial Unit 01D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-001-F02",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 2,
+        "unitType": "Commercial",
+        "area": 960,
+        "displayColor": "#27cbe5",
+        "units": [
+          {
+            "unitId": "SPACE-001-F02-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 2,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#27cbe5",
+            "parentFloorId": "UNIT-001-F02",
+            "name": "Commercial Unit 02A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F02-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 2,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#27cbe5",
+            "parentFloorId": "UNIT-001-F02",
+            "name": "Commercial Unit 02B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F02-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 2,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#27cbe5",
+            "parentFloorId": "UNIT-001-F02",
+            "name": "Commercial Unit 02C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F02-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 2,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#27cbe5",
+            "parentFloorId": "UNIT-001-F02",
+            "name": "Commercial Unit 02D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-001-F03",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 3,
+        "unitType": "Commercial",
+        "area": 960,
+        "displayColor": "#35df85",
+        "units": [
+          {
+            "unitId": "SPACE-001-F03-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 3,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#35df85",
+            "parentFloorId": "UNIT-001-F03",
+            "name": "Commercial Unit 03A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F03-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 3,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#35df85",
+            "parentFloorId": "UNIT-001-F03",
+            "name": "Commercial Unit 03B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F03-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 3,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#35df85",
+            "parentFloorId": "UNIT-001-F03",
+            "name": "Commercial Unit 03C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F03-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 3,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#35df85",
+            "parentFloorId": "UNIT-001-F03",
+            "name": "Commercial Unit 03D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-001-F04",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 4,
+        "unitType": "Commercial",
+        "area": 960,
+        "displayColor": "#35df85",
+        "units": [
+          {
+            "unitId": "SPACE-001-F04-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 4,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#35df85",
+            "parentFloorId": "UNIT-001-F04",
+            "name": "Commercial Unit 04A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F04-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 4,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#35df85",
+            "parentFloorId": "UNIT-001-F04",
+            "name": "Commercial Unit 04B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F04-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 4,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#35df85",
+            "parentFloorId": "UNIT-001-F04",
+            "name": "Commercial Unit 04C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F04-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 4,
+            "unitType": "Commercial",
+            "area": 240,
+            "displayColor": "#35df85",
+            "parentFloorId": "UNIT-001-F04",
+            "name": "Commercial Unit 04D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-001-F05",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 5,
+        "unitType": "Residential",
+        "area": 960,
+        "displayColor": "#ffab40",
+        "units": [
+          {
+            "unitId": "SPACE-001-F05-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 5,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F05",
+            "name": "Apartment 05A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F05-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 5,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F05",
+            "name": "Apartment 05B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F05-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 5,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F05",
+            "name": "Apartment 05C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F05-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 5,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F05",
+            "name": "Apartment 05D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-001-F06",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 6,
+        "unitType": "Residential",
+        "area": 960,
+        "displayColor": "#ffab40",
+        "units": [
+          {
+            "unitId": "SPACE-001-F06-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 6,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F06",
+            "name": "Apartment 06A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F06-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 6,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F06",
+            "name": "Apartment 06B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F06-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 6,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F06",
+            "name": "Apartment 06C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F06-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 6,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F06",
+            "name": "Apartment 06D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-001-F07",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 7,
+        "unitType": "Residential",
+        "area": 960,
+        "displayColor": "#ffab40",
+        "units": [
+          {
+            "unitId": "SPACE-001-F07-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 7,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F07",
+            "name": "Apartment 07A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F07-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 7,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F07",
+            "name": "Apartment 07B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F07-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 7,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F07",
+            "name": "Apartment 07C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F07-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 7,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F07",
+            "name": "Apartment 07D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-001-F08",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 8,
+        "unitType": "Residential",
+        "area": 960,
+        "displayColor": "#ffab40",
+        "units": [
+          {
+            "unitId": "SPACE-001-F08-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 8,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F08",
+            "name": "Apartment 08A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F08-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 8,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F08",
+            "name": "Apartment 08B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F08-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 8,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F08",
+            "name": "Apartment 08C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F08-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 8,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#ffab40",
+            "parentFloorId": "UNIT-001-F08",
+            "name": "Apartment 08D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-001-F09",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 9,
+        "unitType": "Residential",
+        "area": 960,
+        "displayColor": "#b55bef",
+        "units": [
+          {
+            "unitId": "SPACE-001-F09-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 9,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F09",
+            "name": "Apartment 09A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F09-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 9,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F09",
+            "name": "Apartment 09B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F09-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 9,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F09",
+            "name": "Apartment 09C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F09-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 9,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F09",
+            "name": "Apartment 09D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-001-F10",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 10,
+        "unitType": "Residential",
+        "area": 960,
+        "displayColor": "#b55bef",
+        "units": [
+          {
+            "unitId": "SPACE-001-F10-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 10,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F10",
+            "name": "Apartment 10A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F10-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 10,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F10",
+            "name": "Apartment 10B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F10-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 10,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F10",
+            "name": "Apartment 10C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F10-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 10,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F10",
+            "name": "Apartment 10D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-001-F11",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 11,
+        "unitType": "Residential",
+        "area": 960,
+        "displayColor": "#b55bef",
+        "units": [
+          {
+            "unitId": "SPACE-001-F11-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 11,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F11",
+            "name": "Apartment 11A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F11-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 11,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F11",
+            "name": "Apartment 11B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F11-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 11,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F11",
+            "name": "Apartment 11C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F11-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 11,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#b55bef",
+            "parentFloorId": "UNIT-001-F11",
+            "name": "Apartment 11D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "unitId": "UNIT-001-F12",
+        "buildingId": "BUILDING-001",
+        "parcelId": "PARCEL-001",
+        "ulpin": "ULPIN-DEMO-0001",
+        "floorNumber": 12,
+        "unitType": "Residential",
+        "area": 960,
+        "displayColor": "#41d9ff",
+        "units": [
+          {
+            "unitId": "SPACE-001-F12-A",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 12,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#41d9ff",
+            "parentFloorId": "UNIT-001-F12",
+            "name": "Apartment 12A",
+            "footprint": [
+              [
+                77.59446172566372,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F12-B",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 12,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#41d9ff",
+            "parentFloorId": "UNIT-001-F12",
+            "name": "Apartment 12B",
+            "footprint": [
+              [
+                77.5946,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.971655347617757
+              ],
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F12-C",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 12,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#41d9ff",
+            "parentFloorId": "UNIT-001-F12",
+            "name": "Apartment 12C",
+            "footprint": [
+              [
+                77.5946,
+                12.9718
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.971944652382243
+              ],
+              [
+                77.59446172566372,
+                12.9718
+              ]
+            ]
+          },
+          {
+            "unitId": "SPACE-001-F12-D",
+            "buildingId": "BUILDING-001",
+            "parcelId": "PARCEL-001",
+            "ulpin": "ULPIN-DEMO-0001",
+            "floorNumber": 12,
+            "unitType": "Residential",
+            "area": 240,
+            "displayColor": "#41d9ff",
+            "parentFloorId": "UNIT-001-F12",
+            "name": "Apartment 12D",
+            "footprint": [
+              [
+                77.59473827433628,
+                12.9718
+              ],
+              [
+                77.59473827433628,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.971944652382243
+              ],
+              [
+                77.5946,
+                12.9718
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "digest": "80571301f9e6bb59e108c30210ca605ccf99fce1b9a23f737e9ddb9be3953f5d",
+  "checks": [
+    {
+      "key": "relationships",
+      "label": "Parcel and building relationships",
+      "passed": true
+    },
+    {
+      "key": "coordinates",
+      "label": "Geographic coordinate metadata",
+      "passed": true
+    },
+    {
+      "key": "vertical",
+      "label": "Complete floor sequence and heights",
+      "passed": true
+    },
+    {
+      "key": "areas",
+      "label": "Floor and property areas",
+      "passed": true
+    },
+    {
+      "key": "units",
+      "label": "Property unit partitions",
+      "passed": true
+    },
+    {
+      "key": "demo",
+      "label": "Explicit fictional record designation",
+      "passed": true
+    }
+  ],
+  "valid": true
+}

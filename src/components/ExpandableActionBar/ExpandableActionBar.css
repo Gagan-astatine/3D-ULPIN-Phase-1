@@ -1,0 +1,117 @@
+.expandable-action-bar-root {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.expandable-action-bar-track {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 1px solid #333333;
+  background: rgba(10, 10, 10, 0.95);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  min-height: 44px;
+  gap: 6px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.expandable-action-bar-item {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  border-radius: 30px;
+  font-weight: 500;
+  color: #888888;
+  outline: none;
+  transition: color 150ms ease-out, background-color 150ms ease-out;
+  height: 38px;
+  min-width: 38px;
+  padding: 0 10px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+
+.expandable-action-bar-item:focus-visible {
+  color: #f0f0f0;
+}
+
+.expandable-action-bar-item:disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.expandable-action-bar-item.highlighted {
+  color: #f0f0f0;
+}
+
+.expandable-action-bar-item.active {
+  color: #0bb4ff;
+}
+
+.expandable-action-bar-highlight {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 9999px;
+  background-color: rgba(64, 160, 255, 0.15);
+}
+
+.expandable-action-bar-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.expandable-action-bar-label {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.expandable-action-bar-shortcut {
+  display: none;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 10px;
+  color: #888888;
+}
+
+@media (min-width: 640px) {
+  .expandable-action-bar-shortcut {
+    display: inline-block;
+  }
+}
+
+.expandable-action-bar-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 1;
+  height: 16px;
+  min-width: 16px;
+  padding: 0 4px;
+  margin-left: 2px;
+}
+
+.expandable-action-bar-badge.collapsed {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}

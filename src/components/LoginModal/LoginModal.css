@@ -1,0 +1,184 @@
+.login-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #061014b8;
+  backdrop-filter: blur(8px);
+}
+
+.login-modal__panel {
+  position: relative;
+  width: min(430px, 100%);
+  max-height: min(720px, calc(100dvh - 32px));
+  overflow-y: auto;
+  padding: 38px;
+  border: 1px solid #94bbb655;
+  border-radius: 3px;
+  background: #0c1a1df5;
+  box-shadow: 0 20px 70px #0008;
+  animation: login-modal-enter .28s ease both;
+}
+
+.login-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  color: #adc9c5;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.login-modal__close:hover,
+.login-modal__password-toggle:hover,
+.login-modal__register button:hover {
+  color: #f0f7f4;
+}
+
+.login-modal__eyebrow {
+  color: #91bab4;
+  font-size: 10px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.login-modal h2 {
+  margin-top: 16px;
+  color: #eef7f3;
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.login-modal__subtitle {
+  margin-top: 12px;
+  color: #adc4c0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.login-modal form {
+  display: grid;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.login-modal__field {
+  display: grid;
+  gap: 8px;
+  color: #c3d8d4;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 12px;
+  letter-spacing: .03em;
+}
+
+.login-modal__field input {
+  width: 100%;
+  min-height: 43px;
+  padding: 10px 12px;
+  border: 1px solid #7fa9a544;
+  border-radius: 2px;
+  outline: none;
+  background: #071316cc;
+  color: #eff8f5;
+  font: inherit;
+  transition: border-color .2s ease, background .2s ease;
+}
+
+.login-modal__field input:focus {
+  border-color: #a7d4cd;
+  background: #0a1b1fcc;
+}
+
+.login-modal__field input[aria-invalid="true"] {
+  border-color: #d58b86;
+}
+
+.login-modal__password-wrap {
+  position: relative;
+}
+
+.login-modal__password-wrap input {
+  padding-right: 66px;
+}
+
+.login-modal__password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  padding: 4px;
+  color: #8fb7b1;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 11px;
+  transform: translateY(-50%);
+}
+
+.login-modal__error {
+  color: #efa39d;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 11px;
+}
+
+.login-modal__submit {
+  min-height: 45px;
+  margin-top: 4px;
+  border: 1px solid #a4ccc466;
+  border-radius: 2px;
+  background: #b8d9d31c;
+  color: #f0f8f5;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .15em;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.login-modal__submit:hover {
+  border-color: #b9ded666;
+  background: #b8d9d333;
+  transform: translateY(-1px);
+}
+
+.login-modal__register {
+  margin-top: 24px;
+  color: #9ebbb7;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.login-modal__register button {
+  padding: 0;
+  color: #d5ebe6;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@keyframes login-modal-enter {
+  from { opacity: 0; transform: translateY(8px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .login-modal__panel {
+    animation: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .login-modal {
+    padding: 16px;
+  }
+
+  .login-modal__panel {
+    padding: 32px 22px 24px;
+  }
+
+  .login-modal h2 {
+    font-size: 20px;
+  }
+}
