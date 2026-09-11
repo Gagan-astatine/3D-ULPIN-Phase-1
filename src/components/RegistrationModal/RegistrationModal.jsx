@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from '../../i18n/useTranslation.js';
+import { supabase } from '../../lib/supabase.js';
 import './RegistrationModal.css';
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -13,6 +14,7 @@ export default function RegistrationModal({ onClose, onBackToLogin }) {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
   const nameRef = useRef(null);
 
   useEffect(() => {
@@ -36,9 +38,32 @@ export default function RegistrationModal({ onClose, onBackToLogin }) {
     return Object.keys(nextErrors).length === 0;
   };
 
-  const submit = event => {
+  const submit = async event => {
     event.preventDefault();
-    validate();
+    if (!validate()) return;
+    
+    setLoading(true);
+    setErrors({});
+    
+    const { error } = await supabase.auth.signUp({
+      email: email.trim(),
+      password,
+      options: {
+        data: {
+          full_name: fullName.trim()
+        }
+      }
+    });
+    
+    setLoading(false);
+    
+    if (error) {
+      setErrors({ email: error.message });
+    } else {
+      // Auto close or tell them to check email (Supabase default is email confirm enabled)
+      // For now we just close it and they can login
+      onClose();
+    }
   };
 
   return (
@@ -75,7 +100,9 @@ export default function RegistrationModal({ onClose, onBackToLogin }) {
             </span>
             {errors.confirmPassword && <small id="registration-confirm-password-error" className="registration-modal__error">{errors.confirmPassword}</small>}
           </label>
-          <button className="registration-modal__submit" type="submit">{t('auth.createAccountButton')}</button>
+          <button className="registration-modal__submit" type="submit" disabled={loading}>
+            {loading ? '...' : t('auth.createAccountButton')}
+          </button>
         </form>
       </section>
     </div>

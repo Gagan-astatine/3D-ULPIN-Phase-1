@@ -3,6 +3,8 @@ import logo from '../../assets/logo.png';
 import LoginModal from '../LoginModal/LoginModal.jsx';
 import LanguageSelector from '../LanguageSelector/LanguageSelector.jsx';
 import { useTranslation } from '../../i18n/useTranslation.js';
+import { useAuth } from '../../context/AuthContext.jsx';
+import { supabase } from '../../lib/supabase.js';
 import './HeroNavbar.css';
 
 const NAV_ITEMS = ['Platform', 'Technology', 'About'];
@@ -11,6 +13,17 @@ export default function HeroNavbar() {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
+  const { session } = useAuth();
+
+  const handleAuthClick = async () => {
+    if (session) {
+      await supabase.auth.signOut();
+      // Optional: reset hash if on protected route
+      window.location.hash = '';
+    } else {
+      setLoginOpen(true);
+    }
+  };
 
   return (
     <>
@@ -22,8 +35,12 @@ export default function HeroNavbar() {
         <div className={`hero-navbar__links${menuOpen ? ' hero-navbar__links--open' : ''}`}>
           {NAV_ITEMS.map(item => <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{t(`nav.${item.toLowerCase()}`)}</a>)}
         </div>
-        <LanguageSelector className="hero-navbar__login" />
-        <button className="hero-navbar__login" type="button" onClick={() => setLoginOpen(true)}>{t('nav.login')}</button>
+        <div className="hero-navbar__actions">
+          <LanguageSelector className="hero-navbar__lang" />
+          <button className="hero-navbar__login" type="button" onClick={handleAuthClick}>
+            {session ? t('auth.logout') || 'Logout' : t('nav.login')}
+          </button>
+        </div>
         <button className="hero-navbar__menu" type="button" onClick={() => setMenuOpen(value => !value)} aria-expanded={menuOpen} aria-label="Toggle navigation">
           <span />
           <span />

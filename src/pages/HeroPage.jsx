@@ -1,18 +1,27 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import HeroNavbar from '../components/HeroNavbar/HeroNavbar.jsx';
 import logo from '../assets/logo.png';
 import { useTranslation } from '../i18n/useTranslation.js';
+import { useAuth } from '../context/AuthContext.jsx';
 import './HeroPage.css';
 
 export default function HeroPage({ onBegin }) {
   const { t } = useTranslation();
   const [departing, setDeparting] = useState(false);
   const [activeLayer, setActiveLayer] = useState(0);
+  const { session } = useAuth();
 
   const beginJourney = () => {
     setDeparting(true);
     window.setTimeout(onBegin, 520);
   };
+
+  useEffect(() => {
+    // If user logs in while on HeroPage, automatically begin the journey
+    if (session) {
+      beginJourney();
+    }
+  }, [session]);
 
   const slideLabels = t('hero.slideLabels');
   const slideDescriptions = t('hero.slideDescriptions');
