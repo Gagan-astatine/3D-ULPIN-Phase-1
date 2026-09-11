@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Layers3, MapPin, RotateCcw, Map, Building2, Box, Scissors, UnfoldVertical, MoveDown, Plus, Minus, RotateCw, Maximize, HelpCircle, Layers, ChevronDown, X, Compass, Settings, Activity, Search as SearchIcon, Package } from 'lucide-react';
+import { Layers3, MapPin, RotateCcw, Map, Building2, Box, Scissors, UnfoldVertical, MoveDown, Plus, Minus, RotateCw, Maximize, HelpCircle, Layers, ChevronDown, X, Compass, Settings, Activity, Search as SearchIcon, Package, ClipboardSignature, UploadCloud, ShieldAlert } from 'lucide-react';
 import CesiumViewer from '../components/CesiumViewer/CesiumViewer.jsx';
 import SearchBar from '../components/SearchBar/SearchBar.jsx';
 import SpatialLayers from '../components/ReferencePanels/SpatialLayers.jsx';
@@ -15,6 +15,8 @@ import { propertySelection, objectSelection } from '../utils/selectionUtils.js';
 import LanguageSelector from '../components/LanguageSelector/LanguageSelector.jsx';
 import { useTranslation } from '../i18n/useTranslation.js';
 import logo from '../assets/logo.png';
+import { useAuth } from '../context/AuthContext.jsx';
+import { supabase } from '../lib/supabase.js';
 export const initialState = {
   selectedProperty: null,
   selectedParcel: null,
@@ -60,6 +62,13 @@ export const initialState = {
 };
 export default function MapPage() {
   const { t } = useTranslation();
+  const { session } = useAuth();
+
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    window.location.hash = '';
+  };
+
   const [data, setData] = useState(null),
     [state, setState] = useState(initialState),
     [error, setError] = useState('');
@@ -303,7 +312,9 @@ export default function MapPage() {
     { label: t('map.explore'), icon: <Compass size={20} />, onClick: () => setModal(''), isActive: !modal && !propertiesOpen },
     { label: t('map.properties'), icon: <Building2 size={20} />, onClick: () => setPropertiesOpen(true), isActive: propertiesOpen },
     { label: t('map.layers'), icon: <Layers size={20} />, onClick: () => setLayerOpen(v => !v), isActive: layerOpen },
-    { label: t('map.search'), icon: <SearchIcon size={20} />, onClick: () => searchRef.current?.focus(), isActive: false },
+    { label: 'Register', icon: <ClipboardSignature size={20} />, onClick: () => window.location.hash = '#/register', isActive: false },
+    { label: 'Upload', icon: <UploadCloud size={20} />, onClick: () => window.location.hash = '#/upload', isActive: false },
+    { label: 'Conflicts', icon: <ShieldAlert size={20} />, onClick: () => window.location.hash = '#/conflicts', isActive: false },
     { label: t('map.tools'), icon: <Settings size={20} />, onClick: () => setModal('Tools'), isActive: modal === 'Tools' },
     { label: t('map.analytics'), icon: <Activity size={20} />, onClick: () => setDockOpen(v => !v), isActive: dockOpen }
   ];
@@ -368,7 +379,17 @@ export default function MapPage() {
   ];
 
   return <div className={`reference-app ${layerOpen ? 'layers-open' : ''} ${dockOpen ? 'dock-open' : ''}`}>
-    <header className="reference-header"><div className="reference-brand"><img className="reference-logo" src={logo} alt="3Avastha logo" /><div><h1>३AVASTHA  </h1><p>{t('map.tagline')}</p></div></div><div className="reference-location"><MapPin size={22} /><span>{t('map.location')}<small>12.9718° N, 77.5946° E</small></span></div><LanguageSelector className="reference-demo" /><span className="reference-demo">{t('map.demo')}</span></header>
+    <header className="reference-header">
+      <div className="reference-brand"><img className="reference-logo" src={logo} alt="3Avastha logo" /><div><h1>३AVASTHA  </h1><p>{t('map.tagline')}</p></div></div>
+      <div className="reference-location"><MapPin size={22} /><span>{t('map.location')}<small>12.9718° N, 77.5946° E</small></span></div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginLeft: 'auto' }}>
+        <LanguageSelector className="reference-demo" />
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '8px' }}>
+          <span className="reference-demo">{t('map.demo')}</span>
+          {session && <button className="reference-demo" style={{ background: 'transparent', cursor: 'pointer', border: '1px solid #93bcb655', padding: '4px 8px', borderRadius: '2px' }} onClick={handleLogout}>Logout</button>}
+        </div>
+      </div>
+    </header>
     <main className="reference-workspace">
       <CircularMenu items={circularItems} onOpenChange={isOpen => {
         if (isOpen) setDockOpen(false);

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import RegistrationModal from '../RegistrationModal/RegistrationModal.jsx';
 import { useTranslation } from '../../i18n/useTranslation.js';
+import { supabase } from '../../lib/supabase.js';
 import './LoginModal.css';
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -12,6 +13,7 @@ export default function LoginModal({ onClose }) {
   const [showPassword, setShowPassword] = useState(false);
   const [showRegistration, setShowRegistration] = useState(false);
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
   const emailRef = useRef(null);
 
   useEffect(() => {
@@ -32,9 +34,25 @@ export default function LoginModal({ onClose }) {
     return Object.keys(nextErrors).length === 0;
   };
 
-  const submit = event => {
+  const submit = async event => {
     event.preventDefault();
-    validate();
+    if (!validate()) return;
+    
+    setLoading(true);
+    setErrors({});
+    
+    const { error } = await supabase.auth.signInWithPassword({
+      email: email.trim(),
+      password
+    });
+    
+    setLoading(false);
+    
+    if (error) {
+      setErrors({ email: error.message });
+    } else {
+      onClose();
+    }
   };
 
   if (showRegistration) return <RegistrationModal onClose={onClose} onBackToLogin={() => setShowRegistration(false)} />;
@@ -60,7 +78,9 @@ export default function LoginModal({ onClose }) {
             </span>
             {errors.password && <small id="login-password-error" className="login-modal__error">{errors.password}</small>}
           </label>
-          <button className="login-modal__submit" type="submit">{t('auth.login')}</button>
+          <button className="login-modal__submit" type="submit" disabled={loading}>
+            {loading ? '...' : t('auth.login')}
+          </button>
         </form>
         <p className="login-modal__register">{t('auth.registerPrompt')} <button type="button" onClick={() => setShowRegistration(true)}>{t('auth.createAccount')}</button></p>
       </section>
